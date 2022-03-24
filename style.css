@@ -1,0 +1,33 @@
+:root,
+:root.light {
+    --bg-color-main: #E5E5E5;
+    --bg-color-secondary: rgba(110, 106, 111, 0.2);;
+    --bg-color-dark: #6E6A6F;
+    --highlight-color: #AA968A;
+
+    --text-color-titles:#E5E5E5;
+    --text-color-main:#6E6A6F;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: var(--bg-color-main);
+    color: var(--text-color-main);
+}
+
+input[type=color] {
+    width: 100px;
+    height: 100px; 
+    border-radius: 50%;
+    overflow: hidden;
+}
+input[type=color]::-webkit-color-swatch {
+    border: none;
+    border-radius: 50%;
+    padding: 0;
+}
+input[type=color]::-webkit-color-swatch-wrapper {
+    border: none;
+    border-radius: 50%;
+    padding: 0;
+}
