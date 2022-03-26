@@ -10,32 +10,26 @@
         <script src="app.js" defer></script>
     </head> 
     <body>
-        <div id="draw-area-holder">
-            <div id="draw-area">
+        <div id="draw-area">
 
+        </div>
+        <nav>
+            <div id="project-info-holder">
+                <div id="project-name-holder">
+                    Etch-A-Sketch
+                </div>
+                <div id="project-link-holder">
+                    <a href="https://www.theodinproject.com/paths/foundations/courses/foundations/lessons/etch-a-sketch-project" target="_blank" rel="noopener noreferrer">Odin Project #2</a>
+                </div>
             </div>
-        </div>
 
-        <div id="navigation-holder">
-            <nav>
-                <div id="project-info-holder">
-                    <div id="project-name-holder">
-                        Etch-A-Sketch
-                    </div>
-                    <div id="project-link-holder">
-                        Odin Project #2
-                    </div>
-                </div>
-
-                <div id="nav-controls-holder">
-                    <button>Eraser</button>
-                    <button disabled="disabled">Rainbow</button>
-                    <input type="color" name="pen-color" id="pen-clr">
-                    <button disabled="disabled">Grid: 16</button>
-                    <button>Clear</button>
-                </div>
-            </nav>
-        </div>
-
+            <div id="nav-controls-holder">
+                    <button class="nav-controler">Eraser</button>
+                    <button class="nav-controler" disabled="disabled">Rainbow</button>
+                    <input class="nav-controler" type="color" name="pen-color" id="pen-clr">
+                    <button class="nav-controler" disabled="disabled">Grid: 16</button>
+                    <button class="nav-controler">Clear</button>
+            </div>
+        </nav>
     </body>
 </html>

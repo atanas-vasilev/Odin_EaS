@@ -9,15 +9,14 @@
     --text-color-main:#6E6A6F;
 }
 
-body{
-    font-family: 'Courier New', Courier, monospace;
-    background-color: var(--bg-color-main);
-    color: var(--text-color-main);
+a {
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
 }
 
 input[type=color] {
-    width: 100px;
-    height: 100px; 
+    width: 40px;
+    height: 40px; 
     border-radius: 50%;
     overflow: hidden;
 }
@@ -30,4 +29,77 @@ input[type=color]::-webkit-color-swatch-wrapper {
     border: none;
     border-radius: 50%;
     padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    gap: 120px;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Courier New', Courier, monospace;
+    background-color: var(--bg-color-main);
+    color: var(--text-color-main);
+}
+
+#draw-area{
+    height: 600px;
+    width: 600px;
+
+    background: var(--bg-color-secondary);
+    border: 1px solid var(--bg-color-dark);
+}
+
+nav{
+    align-self: stretch;
+
+    display: flex;
+    align-content: space-between;
+}
+
+#project-info-holder{
+    background-color: var(--bg-color-dark);
+    padding: 5px 32px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#project-info-holder > #project-name-holder{
+    color: var(--bg-color-main);
+    font-weight: 400;
+    font-size: 24px;
+}
+
+#project-info-holder > #project-link-holder{
+    align-self: baseline;
+
+    color: var(--bg-color-main);
+    background-color: var(--highlight-color);
+    text-decoration: underline;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 1px;
+}
+
+#project-info-holder > #project-link-holder:hover{
+    cursor: pointer;
+}
+
+#nav-controls-holder{
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    background-color: var(--bg-color-secondary);
+
+}
+
+.nav-controler{
+    transform: translateX(-130px);
 }
