@@ -7,6 +7,8 @@
 
     --text-color-titles:#E5E5E5;
     --text-color-main:#6E6A6F;
+
+    --current-pen-color:black;
 }
 
 a {
@@ -118,7 +120,7 @@ button:not([disabled]):hover{
 
 }
 
-button:disabled{
+*:disabled{
     opacity: 0.6;
     cursor: not-allowed;
 }
@@ -145,4 +147,8 @@ button:disabled{
 /* GRID DEBUG TEMP */
 .col:hover{
     background-color: var(--highlight-color);
+}
+
+.painted{
+    background-color: var(--current-pen-color);
 }
