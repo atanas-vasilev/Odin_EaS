@@ -35,8 +35,7 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    gap: 120px;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 
     font-family: 'Courier New', Courier, monospace;
@@ -102,4 +101,48 @@ nav{
 
 .nav-controler{
     transform: translateX(-130px);
+
+    background-color: var(--bg-color-secondary);
+    border: 2px solid var(--text-color-main);
+    color: var(--bg-color-dark);
+}
+
+button{
+    padding: 4px 16px;
+}
+
+button:not([disabled]):hover{
+    cursor: pointer;
+    background-color:var(--text-color-main);
+    color: var(--text-color-titles);
+
+}
+
+button:disabled{
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.draw-board{
+    display:flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-content: stretch;
+    height: 100%;
+}
+
+.row{
+    flex-grow:1;
+
+    display:flex;
+    flex-direction: row;
+}
+
+.col{
+    flex-grow:1;
+}
+
+/* GRID DEBUG TEMP */
+.col:hover{
+    background-color: var(--highlight-color);
 }
