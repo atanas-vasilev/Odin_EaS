@@ -1,7 +1,8 @@
 # Odin_EaS
-PROJECT: ETCH-A-SKETCH
+ODN PROJECT 4: ETCH-A-SKETCH
 
-https://www.theodinproject.com/lessons/foundations-etch-a-sketch
+Live Link: https://atanas-vasilev.github.io/Odin_EaS/
+Task: https://www.theodinproject.com/lessons/foundations-etch-a-sketch
 
 To-Do List:
 - [x] Complete main points from the assignment
