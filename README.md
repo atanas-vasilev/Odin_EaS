@@ -1,7 +1,7 @@
 # Odin_EaS
 ODN PROJECT 4: ETCH-A-SKETCH
 
-Live Link: https://atanas-vasilev.github.io/Odin_EaS/
+Live Preview: https://atanas-vasilev.github.io/Odin_EaS/
 Task: https://www.theodinproject.com/lessons/foundations-etch-a-sketch
 
 To-Do List:
